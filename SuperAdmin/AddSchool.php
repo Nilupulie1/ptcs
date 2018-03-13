@@ -1,56 +1,10 @@
 <?php
-session_start();
-if(!isset($_SESSION['old'])){
-    echo "<script>
-    window.location.replace('index.php');
-</script>";
-}
-?>
-<?php
 include "navbar.php";
 ?>
-<?php
-include "superfooter.php";
-?>
+
 <?php
 include "superTopNav.php";
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Ceyentra Technologies  </title>
-
-    <!-- Bootstrap -->
-    <link href="SuperAdmin/vendores/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="SuperAdmin/vendores/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="SuperAdmin/vendores/nprogress/nprogress.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="SuperAdmin/build/css/custom.min.css" rel="stylesheet">
-</head>
-
-<body class="nav-md">
-<div class="container body">
-    <div class="main_container">
-        <div class="col-md-3 left_col">
-            <div class="left_col scroll-view">
-                <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Ceyentra Technologies </span></a>
-                </div>
-
-                <div class="clearfix"></div>
-
-            </div>
-        </div>
 
 
         <!-- page content -->
@@ -134,7 +88,7 @@ include "superTopNav.php";
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="sclDistrict">District <span class="required">*</span>
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <select id="sclDistrict" class="form-control ">
+                                            <select id="sclDistrict" class="form-control " name="district">
                                                 <option>Choose option</option>
                                                 <option>Option one</option>
                                                 <option>Option two</option>
@@ -216,30 +170,6 @@ include "superTopNav.php";
         </div>
         <!-- /page content -->
 
-        <!-- footer content -->
-        <footer>
-            <div class="pull-right">
-                <a href="www.ceyentra.com"  target="_blank"> Ceyentra Technologies </a>
-            </div>
-            <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-    </div>
-</div>
-
-<!-- jQuery -->
-<script src="vendores/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="vendores/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="vendores/fastclick/lib/fastclick.js"></script>
-<!-- NProgress -->
-<script src="vendores/nprogress/nprogress.js"></script>
-<!-- validator -->
-<script src="vendores/validator/validator.js"></script>
-
-<!-- Custom Theme Scripts -->
-<script src="build/js/custom.min.js"></script>
-
-</body>
-</html>
+        <?php
+        include "superfooter.php";
+        ?>

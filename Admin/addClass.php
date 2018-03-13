@@ -1,26 +1,17 @@
-<?php
-session_start();
-if(!isset($_SESSION['old'])){
-    echo "<script>
-    window.location.replace('index.php');
-</script>";
-}
-?>
+
 <?php
 include "adminSiderNav.php";
 ?>
+
 <?php
 include "adminTop.php";
-?>
-<?php
-include "superTopNav.php";
 ?>
 
 <div class="right_col" role="main">
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>MANAGE Classes</h3>
+                        <h3>MANAGE CLASSES</h3>
                     </div>
 
                     <div class="title_right">
@@ -64,7 +55,7 @@ include "superTopNav.php";
 
                                     <!--<p>For alternative validation library <code>parsleyJS</code> check out in the <a href="form.html">form page</a>-->
                                     <!--</p>-->
-                                    <span class="section">School Info</span>
+                                    <span class="section">Class Info</span>
 
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="clsCode">Code <span class="required">*</span>
@@ -123,22 +114,6 @@ include "superTopNav.php";
                                         </div>
                                     </div>
 
-                                    <!--<div class="item form-group">-->
-                                    <!--<label class="control-label col-md-3 col-sm-3 col-xs-12" for="userName">User Name-->
-                                    <!--</label>-->
-                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">-->
-                                    <!--<input id="username" class="form-control col-md-7 col-xs-12" data-validate-length-range="10" data-validate-words="1" name="sclLocation" placeholder=" e.g Galle" required="required" type="text">-->
-                                    <!--</div>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="item form-group">-->
-                                    <!--<label for="password" class="control-label col-md-3">Password</label>-->
-                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">-->
-                                    <!--<input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">-->
-                                    <!--</div>-->
-                                    <!--</div>-->
-
-
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Discription
                                         </label>
@@ -162,3 +137,10 @@ include "superTopNav.php";
             </div>
         </div>
         <!-- /page content -->
+
+                <?php
+                include "adminFooter.php";
+                ?>
+            </div>
+        </div>
+
